@@ -1,10 +1,9 @@
-export default {
-	USA: {
-		wikiTitle: 'Visa_requirements_for_United_States_citizens',
-		description: 'United States'
-	},
-	DOM: {
-		wikiTitle: 'Visa_requirements_for_Dominican_Republic_citizens',
-		description: 'Dominican Republic'
-	}
-}
+import express from 'express';
+const router = express.Router();
+import Countries from '../data/countries';
+
+router.get('/', (req, res) => {
+	res.json(Countries);
+});
+
+export default router;

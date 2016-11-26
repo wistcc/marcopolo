@@ -1,7 +1,7 @@
 import express from 'express';
 const router = express.Router();
 import request from 'request';
-import Countries from './countries';
+import Countries from '../data/countries';
 
 const wikiApiUrl = (title) => `https://en.wikipedia.org/w/api.php?action=query&titles=${title}&prop=revisions&rvprop=content&format=json`
 
