@@ -34,8 +34,11 @@ module.exports = [{
         new CopyWebpackPlugin([
             /*Vendors */
             { from: `${vendorsRoot}/bootstrap/dist/css`, to:`${staticRoot}/css` },
+            { from: `${vendorsRoot}/select2/dist/css`, to:`${staticRoot}/css` },
             { from: `${vendorsRoot}/font-awesome/css`, to:`${staticRoot}/css` },
             { from: `${vendorsRoot}/bootstrap/dist/js`, to:`${staticRoot}/js` },
+            { from: `${vendorsRoot}/select2/dist/js`, to:`${staticRoot}/js` },
+            { from: `${vendorsRoot}/datamaps/dist`, to:`${staticRoot}/js` },
             { from: `${vendorsRoot}/jquery/dist`, to:`${staticRoot}/js` },
             
             /*Us */

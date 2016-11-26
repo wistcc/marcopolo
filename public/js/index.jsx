@@ -1,4 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Configuration from './components/configuration';
+import Map from './components/map';
 
-ReactDOM.render(<div>Hello World</div>, document.getElementById('mainContainer'));
+ReactDOM.render(
+    <div className="row">
+        <Configuration/>
+        <Map/>
+    </div>
+    , document.getElementById('mainContainer'));

@@ -4,7 +4,7 @@
   "description": "Traveling Manager",
   "main": "app.js",
   "scripts": {
-    "start": "webpack --watch ; node ./dist/app.js"
+    "start": "webpack --watch & node ./dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.7",
     "copy-webpack-plugin": "^4.0.1",
+    "datamaps": "^0.5.8",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "font-awesome": "^4.7.0",
@@ -38,6 +39,7 @@
     "morgan": "^1.7.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-select2-wrapper": "^1.0.4-beta1",
     "source-map": "^0.5.6",
     "source-map-loader": "^0.1.5",
     "webpack": "^1.13.3"
