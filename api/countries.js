@@ -3,7 +3,7 @@ const router = express.Router();
 import Countries from '../data/countries';
 
 router.get('/', (req, res) => {
-	res.json(Countries);
+	res.json({ countries: Countries });
 });
 
 export default router;
