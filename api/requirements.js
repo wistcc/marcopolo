@@ -9,13 +9,13 @@ const wikiApiUrl = (title) => `https://en.wikipedia.org/w/api.php?action=query&t
 const getCountriesWhichDontRequireVisa = body => {
   const regex = /flag\|([A-Z]\w+)}}(?:[^\|]*\|){2}([^}]*)/gmi;
   let match = regex.exec(body);
-  let countriesNoVisaRequired = [];
+  let countriesNoVisaRequired = {};
   while(match != null) {
       if (match[2] === 'Visa not required') {
           let code = lookup.countries({name: match[1]})[0];
           
           if(code)
-          countriesNoVisaRequired.push(code.alpha3);
+          countriesNoVisaRequired[code.alpha3] = { fillKey: "visaNotRequired" };
       }
       match = regex.exec(body);
   }
