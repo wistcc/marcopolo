@@ -25,7 +25,7 @@ export default class Map extends Component {
 
     render() {
         return (
-            <div className="col-xs-10">
+            <div className="row">
                 <div id="mapContainer"></div>
             </div>
         );

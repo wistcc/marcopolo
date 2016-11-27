@@ -40,6 +40,7 @@ module.exports = [{
             { from: `${vendorsRoot}/select2/dist/js`, to:`${staticRoot}/js` },
             { from: `${vendorsRoot}/datamaps/dist`, to:`${staticRoot}/js` },
             { from: `${vendorsRoot}/jquery/dist`, to:`${staticRoot}/js` },
+            { from: `${vendorsRoot}/font-awesome/fonts`, to:`${staticRoot}/fonts` },
             
             /*Us */
             { from: './public/css', to: `${staticRoot}/css` },
